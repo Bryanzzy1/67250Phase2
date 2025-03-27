@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Incline | Duquesne Incline</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="logo">
+                <h1>Duquesne Incline</h1>
+                <img src="/static/DuqInclineLogo.png" alt="Logo" />
+            </div>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="/view/things_to_do.html">Things To Do</a>
+                <a href="/view/gift_shop.html">Gift Shop</a>
+                <a href="/view/about.html">About the Incline</a>
+                <a href="#" class="btn">Book a tour!</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content-layout">
+                <div class="left-column">
+                    <div class="history-content">
+                        <h2 class="about-section-title">About The Incline</h2>
+                        <h3>Early History</h3>
+                        <p>
+                            The Duquesne Incline is one of those which follows very
+                            closely the tracks of an early coal hoist. Old newspapers
+                            indicate the existence of such a conveyance as early as 1854.
+                            Residents apparently referred to it as "Kirk Lewis' incline"
+                            and located it on the present site of The Duquesne Incline's
+                            Upper Station. Grandview Avenue was then the High Street, and
+                            the area was just beginning to be converted from farmland to
+                            homesites. This pleasantly-situated acreage was an excellent
+                            area to absorb some of the expanding population of the city,
+                            but the problem of easy access was still to be solved.
+                        </p>
+                        <p>
+                            Although plans for a freight and passenger incline are known
+                            to have existed much earlier, financial backing was
+                            exceedingly hard to find--even the modest sum of $47,000--and
+                            actual construction was delayed. Eventually, of course,
+                            difficulties were overcome and the Incline was built. It was
+                            opened to the public May 20, 1877. The Duquesne Incline was
+                            the first Pittsburgh incline designed and built by Samuel
+                            Diescher, for Kirk Bigham and Associates. Mr. Diescher, an
+                            engineer, had become the country's foremost builder of
+                            inclines. He was also to design and build most of those that
+                            followed.
+                        </p>
+                        <p>
+                            At the time of its public opening, it was one of four inclined
+                            planes serving the summit of Coal Hill, which later came to be
+                            known as Mount Washington. The Duquesne Incline was operated,
+                            from 1877 until 1962 by The Duquesne Inclined Plane Company.
+                            From 1964 until the present, the Incline has been operated by
+                            the Society for the Preservation of The Duquesne Heights
+                            Incline; it has been owned by the Port Authority of Allegheny
+                            County.
+                        </p>
+                    </div>
+
+                    <div class="mailing-section">
+                        <h3 class="mailing-title">Join Our Mailing List</h3>
+                        <form class="mailing-form" onclick="formValidation()">
+                            <div id="formError" class="form-error"></div>
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label required">Full Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    class="form-field" 
+                                    required 
+                                    placeholder="Enter your full name"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label required">Email Address</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    class="form-field" 
+                                    required
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Mobile Phone</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    class="form-field" 
+                                    pattern="[0-9]{10}"
+                                    placeholder="1234567890"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="zipcode" class="form-label">Zip Code</label>
+                                <input 
+                                    type="text" 
+                                    id="zipcode" 
+                                    class="form-field" 
+                                    pattern="[0-9]{5}"
+                                    placeholder="12345"
+                                >
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="sms-consent" class="form-checkbox">
+                                <label for="sms-consent" class="checkbox-label">
+                                    Receive SMS updates about events and promotions
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-button">Join Mailing List</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="history-image">
+                        <img src="../static/history.png"
+                            alt="Duquesne Incline Historical Photo" />
+                        <p class="creds">Photo courtesy of "Mike Druckenbrod" on Flickr</p>
+                    </div>
+
+                    <aside>
+                        <h3 class="society-title">
+                            The Society for the Preservation of the Duquesne Heights Incline
+                        </h3>
+                        <div>
+                            <p class="society-description">
+                                The Society for the Preservation of the Duquesne Heights
+                                Incline was formed in 1964 by the Duquesne Heights/Mount
+                                Washington neighborhood group that had rescued, repaired, and
+                                reopened the Incline in 1963. The purpose was to continue to
+                                restore and rehabilitate the cars, equipment, and both
+                                stations, and to establish the entire operation as a reliable
+                                commuter facility and a popular visitor attraction.
+                                Memberships in the society are available, call for details.
+                            </p>
+
+                            <h4 class="society-title">Facts</h4>
+
+                            <p class="fact">Opened to Public: May 20, 1877</p>
+                            <p class="fact">
+                                Cost to Build: $47,000Length of Track: 794 feet
+                            </p>
+                            <p class="fact">Elevation: 400 feet</p>
+                            <p class="fact">Grade: 30.5 degrees</p>
+                            <p class="fact">
+                                Speed: 6 miles per hourPassenger: Capacity 18 per car
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <h1>Duquesne Incline</h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="/view/things_to_do.html">Things to Do</a>
+                    <a href="/view/gift_shop.html">Gift Shop</a>
+                    <a href="/view/about.html">About the Incline</a>
+                </nav>
+                <p>Copyright @2025 Duquesne Incline - All rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
