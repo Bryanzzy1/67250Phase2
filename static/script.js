@@ -1,5 +1,5 @@
 // Handle additional dining content in "Things to Do" page
-$(function() {
+$(function () {
     // HTML template for dining options
     const additionalContent = `
         <section class="dining-options additional-content">
@@ -55,7 +55,7 @@ $(function() {
     $('.additional-content').hide();
 
     // Toggle content visibility on button click
-    $('.more-button').click(function() {
+    $('.more-button').click(function () {
         if ($('.additional-content').is(':hidden')) {
             $('.additional-content').show();
             $(this).text('Show less');
@@ -67,7 +67,7 @@ $(function() {
 });
 
 // Handle image carousel functionality
-$(function() {
+$(function () {
     // Image credits array
     let credits = [
         "Photo courtesy of \"Urban Redevlopment Authority of Pittsburgh\"",
@@ -77,15 +77,15 @@ $(function() {
     ];
 
     // Next button click handler
-    $('.next-btn').click(function() {
+    $('.next-btn').click(function () {
         let current = $('.slide.active');
         let next = current.next('.slide');
-        
+
         // Loop back to first slide if at end
         if (next.length === 0) {
             next = $('.slide:first');
         }
-        
+
         current.removeClass('active');
         next.addClass('active');
 
@@ -95,15 +95,15 @@ $(function() {
     });
 
     // Previous button click handler
-    $('.prev-btn').click(function() {
+    $('.prev-btn').click(function () {
         let current = $('.slide.active');
         let prev = current.prev('.slide');
-        
+
         // Loop to last slide if at beginning
         if (prev.length === 0) {
             prev = $('.slide:last');
         }
-        
+
         current.removeClass('active');
         prev.addClass('active');
 
@@ -114,14 +114,14 @@ $(function() {
 });
 
 // Handle booking button functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Select all booking buttons
     const bookingButtons = document.querySelectorAll('.btn, .btn.lg');
     const bookingUrl = 'https://form.jotform.com/240705601606145';
 
     // Add click handlers to all booking buttons
     bookingButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             window.open(bookingUrl, '_blank');
         });
     });
@@ -135,7 +135,7 @@ function formValidation() {
     let phone = document.getElementById("phone");
     let zipcode = document.getElementById("zipcode");
     let formError = document.getElementById("formError");
-    
+
     // Reset error message
     formError.innerHTML = "";
     if (!name.checkValidity() || !email.checkValidity()) {

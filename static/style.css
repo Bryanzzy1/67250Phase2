@@ -224,10 +224,11 @@ h4 {
     padding-left: 0;
 }
 
-.faq-item h3{
+.faq-item h3 {
     font-size: 32px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
+
 .faq-item {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -373,7 +374,7 @@ footer p {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
-    
+
 }
 
 .things-page-description {
@@ -641,11 +642,11 @@ footer p {
 }
 
 .left-column {
-    flex:50%;
+    flex: 50%;
 }
 
 .right-column {
-    flex:50%;
+    flex: 50%;
 }
 
 .about-section-title {
@@ -683,7 +684,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-.history-image img{
+.history-image img {
     margin-top: 50px;
     width: 100%;
     border-radius: 12px;
